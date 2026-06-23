@@ -1,0 +1,62 @@
+||| System Design Mastery
+
+# Foundations
+# API Design
+# Database
+# Caching
+# Big Data
+# Production Infra
+
+1. Every complex system starts simple
+    - Single User
+    - Starting small allows us to understand core concepts
+
+!!! Build a Single Server Setup
+    Server
+        - Web app
+        - Database
+        - Cache
+    
+Key Takeaways
+- Start small       : Begin with a straightforward single-server setup.
+- Request flow      : Understand how requests flow through your system.
+- Traffic source    : Web and mobile apps and how they interact with your server.
+
+Choosing the right Database
+Two main options
+1. Relational Database
+2. Non-Relational Database (NoSQL database)
+
+- Relational Databases
+    - Uses SQL language
+    - Tables are used
+    -Advantages
+        - Support complex join operations
+        - Data consistency and integrity
+        - Transaction -> ACID
+            - Atomicity : completely successds or completely fails.
+            - Consistency: valid => another valid state.
+            - Isolation: isolated from other trnsactions.
+            - Durability: data remains in case of system failure.
+
+- Non-Relational Database
+    . MongoDB   = document stores
+    . Kasandra  = wide-column stores
+    . Reddis    = key-value stores
+    . Neo4G     = Graph
+
+- Relational Vs Non-Relational
+
+    > Relational
+        . Data is well structured with clear relationships.
+        . Strong consistency and transactional integrity.
+
+    > Non-Relational
+        . Super-low latency for rapid response.
+        . Data is unstructured or semi-structured.
+        . Scalable storage for massive data volumes.
+
+Vertical Vs Horizontal Scaling
+
+# Vertical Scaling (Scale Up)
+- 
